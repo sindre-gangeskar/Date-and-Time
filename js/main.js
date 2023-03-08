@@ -46,6 +46,6 @@ function getAbout(){
 
 
 setInterval(getDigitalTime, 1000);
-setInterval(getDay(), 60000);
+setInterval(getDay(), 1000);
 
 
