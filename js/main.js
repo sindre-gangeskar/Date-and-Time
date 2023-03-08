@@ -40,7 +40,7 @@ function getDigitalTime() {
   });
 }
 setInterval(getDigitalTime, 1000);
-setInterval(getDay(), 60000);
+setInterval(getDay, 60000);
 
 function getAbout(){
   alert("Created by Sindre Gangeskar");
