@@ -27,9 +27,9 @@ function getDay() {
     "November",
     "January",
   ];
-  document.getElementById("day").innerHTML = dayList[day];
-  document.getElementById("month").innerHTML = monthList[month];
-  document.getElementById("year").innerHTML = year;
+  document.getElementById("day").innerText = dayList[day];
+  document.getElementById("month").innerText = monthList[month];
+  document.getElementById("year").innerText = year;
 }
 
 function getDigitalTime() {
@@ -39,9 +39,13 @@ function getDigitalTime() {
     minute: "2-digit",
   });
 }
-setInterval(getDigitalTime, 1000);
-setInterval(getDay, 60000);
 
 function getAbout(){
   alert("Created by Sindre Gangeskar");
 }
+
+
+setInterval(getDigitalTime, 1000);
+setInterval(getDay(), 60000);
+
+
