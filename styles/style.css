@@ -70,14 +70,14 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 80vw;
-  height: 0vw;
+  height: 2.2vw;
   text-align: center;
   
   position: absolute;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 0.3rem;
-  border: 1px white solid;
+  border: 1px rgba(255, 255, 255, 0.523) solid;
   font-family: "Poppins";
   text-align: center;
   display: flex;
@@ -101,7 +101,7 @@ body {
   height: 100%;
   font-size:2.0vw;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: light;
   transition: 0.2s;
   cursor: pointer;
   border: none;
