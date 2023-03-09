@@ -44,6 +44,9 @@ function getAbout(){
   alert("Created by Sindre Gangeskar");
 }
 
+function getNewBackgroundImage(){
+  let bgList = [""]
+}
 
 setInterval(getDigitalTime, 1000);
 setInterval(getDay(), 1000);
