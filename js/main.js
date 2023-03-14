@@ -32,23 +32,45 @@ function getDay() {
   document.getElementById("year").innerText = year;
 }
 
+var set24Hrs = false;
 function getDigitalTime() {
   const now = new Date();
-  document.getElementById("currentTime").innerText = now.toLocaleTimeString({
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+  let lang = navigator.language;
+  if (set24Hrs === true) {
+    document.getElementById("currentTime").innerHTML = now.toLocaleTimeString(
+      lang,
+      {
+        hour12: true,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      }
+    );
+  } else {
+    document.getElementById("currentTime").innerHTML = now.toLocaleTimeString(
+      lang,
+      {
+        hour12: false,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      }
+    );
+  }
 }
 
-function getAbout(){
+function getAbout() {
   alert("Created by Sindre Gangeskar");
 }
 
-function getNewBackgroundImage(){
-  let bgList = [""]
+function Change() {
+  set24Hrs =! set24Hrs;
+  if (document.getElementById("switch").checked) {
+    console.log(set24Hrs);
+  } else {
+    console.log(set24Hrs);
+  }
 }
 
 setInterval(getDigitalTime, 1000);
-setInterval(getDay(), 1000);
-
-
+setInterval(getDay, 1000);

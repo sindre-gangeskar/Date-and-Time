@@ -2,23 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <noscript>Javascript is required, please enable it</noscript>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
     <title>Day & Time</title>
   </head>
-
+  
+  <body>
 <h1 style="visibility: hidden;">Digital Klokke</h1>
 <h1 style="visibility: hidden;">Digital Clock</h1>
 
+<div class="toggle">
+  <input type="checkbox" name="24hr-switch" id="switch" onclick="Change()">
+  <label for="24hr-switch" id="toggle-label">Toggle 24hr clock</label>
+</div>
+
   <div class="circle">
-    <body>
       <div class="clock">
           <div id="currentTime"></div>
       </div>
-
       <div class="calendar">
           <div id="day">DAY</div>
           <div id="month">MONTH</div>
