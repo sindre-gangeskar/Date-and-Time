@@ -36,7 +36,7 @@ var set24Hrs = false;
 function getDigitalTime() {
   const now = new Date();
   let lang = navigator.language;
-  if (set24Hrs === true) {
+  if (set24Hrs === false) {
     document.getElementById("currentTime").innerHTML = now.toLocaleTimeString(
       lang,
       {
