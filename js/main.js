@@ -59,17 +59,9 @@ function getDigitalTime() {
   }
 }
 
-function getAbout() {
-  alert("Created by Sindre Gangeskar");
-}
-
 function Change() {
   set24Hrs =! set24Hrs;
-  if (document.getElementById("switch").checked) {
-    console.log(set24Hrs);
-  } else {
-    console.log(set24Hrs);
-  }
+
 }
 
 setInterval(getDigitalTime, 1000);
